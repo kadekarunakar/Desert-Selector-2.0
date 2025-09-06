@@ -48,28 +48,18 @@ section p{
 section h4{
     text-align: center;
 }
-section .Ingredients{
-    color: red;
-    border: 2px solid black;
-    text-align: center;
-    display: inline-block;
-    margin:auto ;
-    padding: 5px;
-    
-    
-}
-section .Ingredients li{
-    list-style-type: none;
-    margin: 5px;
-    padding: 5px;   
-}
+
 
 main section .top{
     border-radius: 50%;
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     border: 2px solid white;
     margin-left: 80%;
+}
+main section .top:hover{
+    transform: scale(1.2); /* start small */
+  transition: transform 0.3s ease-in-out;
 }
 
 
@@ -126,12 +116,15 @@ nav ul li.active {
     display: block;
     text-align: center;
     margin: 10px auto;
-    padding: 15px;
+    padding: 20px;
     width: fit-content;
-    border: 2px solid black;
-    color: red;
+    color:black;
     text-align: center;
     list-style-type: none;
+    max-width: 90%;
+    box-sizing: border-box;
+    background-color: rgb(164, 250, 250);
+    
     
 }
 
