@@ -124,6 +124,7 @@ nav ul li.active {
 
 .ingredients-list {
     display: block;
+    text-align: center;
     margin: 10px auto;
     padding: 15px;
     width: fit-content;
