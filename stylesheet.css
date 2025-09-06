@@ -1,90 +1,148 @@
-*{
-    margin: 0px;
+header{
+    background-color: green;
+    padding: 1em;
+    color: white;
+    text-align: center; 
+    margin: 0px;   
+}
+nav{
+    background-color: rgba(0, 0, 0, 0.708);
+}
+nav ul{
+    list-style-type: none;
     padding: 0px;
-    color: #0a0009c6;
-    
-    background-color: rgb(245, 215, 152);
-}
-#navbar{   
-    height: 70px;
-    background-color: rgb(0, 19, 19);
+    margin: 0px;
     text-align: center;
-    line-height: 40px;
-    margin-bottom: 2px;
-    
-
 }
-h1{
-    text-align: center;
-    color: rgb(13, 9, 1);
-}
-a{
-    border: 0px solid white;
-    border-radius: 0px;
+nav ul li{
+    color: white;
+    display:inline-block;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0px 10px 2px 10px;
     
-    text-decoration: none;
-    color: rgb(116, 24, 228);
-    margin-left: 5px;
-    margin-right: 5px;
-    
-    font-size: large;
-    font-style:normal;
 }
-a:hover{
-    color:white;
-    font-size: 25px;
+nav ul li:hover{
+    background-color: black;
+    cursor: pointer;
+}
+main{
+    
+    background-color:rgb(237, 217, 217);
+    
 }
 section{
-    height: 570px;
-    border: 1px solid rgba(7, 7, 7, 0.815);
-    padding-top: 10px;
-p{
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+section h3{
+    text-align: center;
+    margin: 0px;
+    padding: 20px 0px 5px  0px;
+}
+section p{
     text-align: center;
 }
 
-}
-#img{
+section h4{
     text-align: center;
 }
-img{
-    height: 300px;
-    width:300px;
+section .Ingredients{
+    color: red;
+    border: 2px solid black;
+    text-align: center;
+    display: inline-block;
+    margin:auto ;
+    padding: 5px;
+    
     
 }
-h3{
-    text-align: center;
-    font-style:inherit;
+section .Ingredients li{
+    list-style-type: none;
+    margin: 5px;
+    padding: 5px;   
 }
-h4{
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 4px;
-    text-decoration: underline;
+
+main section .top{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+    margin-left: 80%;
 }
-ul{
-    text-align: center;
-    margin-top: 3px;
-    color: blue;
+
+
+/* Highlight active nav item */
+nav ul li.active {
+    background-color: green;
+    font-weight: bold;
+    border: 2px solid white;
 }
-#top{
+/* Hide ingredients by default */
+.hidden {
+    display: none;
+}
+
+/* Container for image + overlay button */
+.image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: fit-content;
+
+}
+.image-container img{
+    display: block;
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    border-radius: 10px;
+
+}
+
+.view-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 128, 0, 0.85);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: none; /* hidden until hover */
+}
+
+.image-container:hover .view-btn {
+    display: block;
+}
+
+
+.ingredients-list {
+    display: block;
+    margin: 10px auto;
+    padding: 15px;
+    width: fit-content;
+    border: 2px solid black;
+    color: red;
     text-align: center;
-    margin-top: 10px;
+    list-style-type: none;
     
 }
 
-.top {
-  margin: 20px auto;             
-  border: 2px solid rgb(15, 10, 1);
-  display: block;                
-  width: 30%;            
-  text-align: center;
-  height: 30px;
-  
+
+
+footer{
+    background-color: black;
+    
 }
-.copyright{
-    height: 50px; 
-    padding-top: 8px;
+#footer-text{
+    color: white;
+    padding: 20px;
+    font-size: 20px;
     text-align: center;
-    font-size: large;
-    background-color: #fefefe 
 }
